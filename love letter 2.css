@@ -315,11 +315,11 @@ body {
 
 .taped-photo {
   position: absolute; /* Quan trọng để định vị tự do */
-  top: 10%; /* Vị trí từ trên xuống */
-  right: 5%; /* Vị trí từ trái sang */
-  width: 150px; /* Chiều rộng của ảnh */
+  top: -5%; /* Vị trí từ trên xuống */
+  right: 10%; /* Vị trí từ trái sang */
+  width: 80px; /* Chiều rộng của ảnh */
   height: auto; /* Chiều cao tự động */
-  transform: rotate(6deg); /* Góc nghiêng nhẹ */
+  transform: rotate(7deg); /* Góc nghiêng nhẹ */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho ảnh */
   z-index: 4; /* Đảm bảo ảnh nằm trên chữ */
   border: 1px solid #ddd; /* Viền mỏng */
