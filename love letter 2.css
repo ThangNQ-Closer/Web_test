@@ -112,7 +112,7 @@
 }
 
 .open .letter {
-  transform: translateY(-175px);
+  transform: translateY(-180px);
   transition: transform 0.4s 0.6s ease, z-index 0.6s;
   z-index: 2;
 }
@@ -313,4 +313,57 @@ body {
   }
 }
 
+.taped-photo {
+  position: absolute; /* Quan trọng để định vị tự do */
+  top: 10%; /* Vị trí từ trên xuống */
+  right: 5%; /* Vị trí từ trái sang */
+  width: 150px; /* Chiều rộng của ảnh */
+  height: auto; /* Chiều cao tự động */
+  transform: rotate(6deg); /* Góc nghiêng nhẹ */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho ảnh */
+  z-index: 4; /* Đảm bảo ảnh nằm trên chữ */
+  border: 1px solid #ddd; /* Viền mỏng */
+  background-color: #fff; /* Nền trắng cho ảnh */
+  padding: 5px; /* Khoảng đệm bên trong viền */
+}
 
+.taped-photo img {
+  width: 100%; /* Ảnh đầy đủ chiều rộng của khung */
+  height: 100%;
+  display: block; /* Loại bỏ khoảng trống thừa dưới ảnh */
+  object-fit: cover; /* Đảm bảo ảnh vừa khung mà không bị méo */
+}
+
+/* Style cho các miếng băng dính */
+.tape {
+  position: absolute;
+  width: 35px; /* Chiều rộng băng dính */
+  height: 15px; /* Chiều cao băng dính */
+  background-color: rgba(192, 192, 192, 0.6); /* Màu xám trong suốt */
+  z-index: 5; /* Băng dính nằm trên ảnh */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tape.top-left {
+  top: -8px;
+  left: -15px;
+  transform: rotate(-25deg);
+}
+
+.tape.top-right {
+  top: -8px;
+  right: -15px;
+  transform: rotate(25deg);
+}
+
+.tape.bottom-left {
+  bottom: -8px;
+  left: -15px;
+  transform: rotate(25deg);
+}
+
+.tape.bottom-right {
+  bottom: -8px;
+  right: -15px;
+  transform: rotate(-25deg);
+}
