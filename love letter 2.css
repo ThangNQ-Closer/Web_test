@@ -1,7 +1,7 @@
 #envelope {
   position: relative;
-  width: 280px;
-  height: 180px;
+  width: 420px;
+  height: 270px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   margin-left: auto;
@@ -18,20 +18,20 @@
 }
 
 .flap {
-  border-left: 140px solid transparent;
-  border-right: 140px solid transparent;
-  border-bottom: 82px solid transparent;
+  border-left: 210px solid transparent;
+  border-right: 210px solid transparent;
+  border-bottom: 123px solid transparent;
   /* a little smaller */
-  border-top: 98px solid #d9534f; /* Same romantic red */
+  border-top: 147px solid #d9534f; /* Same romantic red */
   /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
 
 .pocket {
-  border-left: 140px solid #f5a3a2; /* Soft pinkish red for the pocket */
-  border-right: 140px solid #f5a3a2;
-  border-bottom: 90px solid #ff6f61; /* Lighter romantic red */
+  border-left: 210px solid #f5a3a2; /* Soft pinkish red for the pocket */
+  border-right: 210px solid #f5a3a2;
+  border-bottom: 180px solid #ff6f61; /* Lighter romantic red */
   border-top: 90px solid transparent;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -40,11 +40,11 @@
 .letter {
   position: relative;
   background-color: #fff;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   height: 90%;
-  top: 5%;
+  top: 10%;
   border-radius: 6px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
   font-family: "Dancing Script", cursive;
@@ -72,24 +72,24 @@
   font-size: 0.5rem;
   width: 25%;
   height: 7%;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .words.line2 {
   top: 30%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 .words.line3 {
   top: 50%;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .words.line4 {
   top: 70%;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -112,14 +112,14 @@
 }
 
 .open .letter {
-  transform: translateY(-100px);
+  transform: translateY(-190px);
   transition: transform 0.4s 0.6s ease, z-index 0.6s;
   z-index: 2;
 }
 
 .hearts {
   position: absolute;
-  top: 90px;
+  top: 135px;
   left: 0;
   right: 0;
   z-index: 2;
@@ -136,10 +136,10 @@
 .heart:after {
   position: absolute;
   content: "";
-  left: 50px;
+  left: 75px;
   top: 0;
-  width: 50px;
-  height: 80px;
+  width: 75px;
+  height: 120px;
   background: #e60073; /* Deep romantic pink */
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
@@ -268,7 +268,7 @@ body {
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 5px;
+  margin: 20px 60px;
   padding: 10px;
   line-height: 1em;
   text-decoration: none;
