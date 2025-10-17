@@ -112,7 +112,7 @@
 }
 
 .open .letter {
-  transform: translateY(-190px);
+  transform: translateY(-180px);
   transition: transform 0.4s 0.6s ease, z-index 0.6s;
   z-index: 2;
 }
@@ -312,3 +312,4 @@ body {
     opacity: 0;
   }
 }
+
